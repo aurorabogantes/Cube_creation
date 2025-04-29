@@ -1,0 +1,228 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="637201c0-9f31-45f9-8030-4f196cf52c15" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>BI</ID>
+  <Name>BI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BI</DataSourceID>
+  <Schema>
+    <xs:schema id="BI" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="BI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="147c1883-915b-4a41-aefd-6c0f5fa50846">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Matrimonios_Dim_AnnoTrabajo" msprop:DbTableName="Matrimonios_Dim_AnnoTrabajo" msprop:FriendlyName="Matrimonios_Dim_AnnoTrabajo" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1f0c84f1-1816-42b8-960f-84bc34548926">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_AnnoTrabajo" msprop:FriendlyName="ID_AnnoTrabajo" msprop:DbColumnName="ID_AnnoTrabajo" msprop:design-time-name="e4ecb56e-1ff7-4b94-9c30-8ad7cd4776a9" type="xs:long" />
+                  <xs:element name="AnnoTrabajo" msprop:FriendlyName="AnnoTrabajo" msprop:DbColumnName="AnnoTrabajo" msprop:design-time-name="6d2b0e7c-f0fc-4f9a-a063-fc1220d9fe91" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:FriendlyName="Cantidad" msprop:DbColumnName="Cantidad" msprop:design-time-name="99d31dfb-5604-4486-a12c-f45c1f268889" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Matrimonios_Dim_Ocupacion" msprop:DbTableName="Matrimonios_Dim_Ocupacion" msprop:FriendlyName="Matrimonios_Dim_Ocupacion" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="222f0f82-cb48-491a-b5f6-2937919e5e0f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Ocupacion" msprop:FriendlyName="ID_Ocupacion" msprop:DbColumnName="ID_Ocupacion" msprop:design-time-name="64ebbd67-4797-43ff-b179-78858058f9bd" type="xs:long" />
+                  <xs:element name="OcupacionPareja1" msprop:FriendlyName="OcupacionPareja1" msprop:DbColumnName="OcupacionPareja1" msprop:design-time-name="5e30a33b-804e-4e56-aa73-57b5ef9e07f5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OcupacionPareja2" msprop:FriendlyName="OcupacionPareja2" msprop:DbColumnName="OcupacionPareja2" msprop:design-time-name="e5ce9a3e-88ec-489f-aa2f-8f00ec4b3131" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:FriendlyName="Cantidad" msprop:DbColumnName="Cantidad" msprop:design-time-name="f15afdd1-2393-4597-b42b-571fe70919ad" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Matrimonios_Dim_RegionMatrimonio" msprop:DbTableName="Matrimonios_Dim_RegionMatrimonio" msprop:FriendlyName="Matrimonios_Dim_RegionMatrimonio" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a676e0e9-2510-4fce-afb8-484cfa195904">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_RegionMatrimonio" msprop:FriendlyName="ID_RegionMatrimonio" msprop:DbColumnName="ID_RegionMatrimonio" msprop:design-time-name="76215ccb-b52e-4a73-b165-8fd19067202f" type="xs:long" />
+                  <xs:element name="ProvinciaMatrimonio" msprop:FriendlyName="ProvinciaMatrimonio" msprop:DbColumnName="ProvinciaMatrimonio" msprop:design-time-name="c6723419-00eb-438b-bbc8-9e8b3498388d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CantonMatrimonio" msprop:FriendlyName="CantonMatrimonio" msprop:DbColumnName="CantonMatrimonio" msprop:design-time-name="53d27d25-6a02-43cc-ba41-4f48c4614528" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DistritoMatrimonio" msprop:FriendlyName="DistritoMatrimonio" msprop:DbColumnName="DistritoMatrimonio" msprop:design-time-name="945dfec3-31d3-4fa9-9bc8-a962409d080d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:FriendlyName="Cantidad" msprop:DbColumnName="Cantidad" msprop:design-time-name="4f784c24-c1e8-46cf-8937-a8eb422de65f" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Matrimonios_Dim_TipoMatrimonio" msprop:DbTableName="Matrimonios_Dim_TipoMatrimonio" msprop:FriendlyName="Matrimonios_Dim_TipoMatrimonio" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0ca75598-3376-4f74-bed9-e1407a88bfad">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TipoMatrimonio" msprop:FriendlyName="ID_TipoMatrimonio" msprop:DbColumnName="ID_TipoMatrimonio" msprop:design-time-name="36757a20-8d7c-40f1-8f58-90f7b642f94f" type="xs:long" />
+                  <xs:element name="TipoMatrimonio" msprop:FriendlyName="TipoMatrimonio" msprop:DbColumnName="TipoMatrimonio" msprop:design-time-name="ca433ee6-6001-4a64-a683-8292765ac099" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:FriendlyName="Cantidad" msprop:DbColumnName="Cantidad" msprop:design-time-name="fa453fe4-65dc-459a-86ee-4df1d398975e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Matrimonios_Dim_TipoPareja" msprop:DbTableName="Matrimonios_Dim_TipoPareja" msprop:FriendlyName="Matrimonios_Dim_TipoPareja" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a0e83c8d-e790-4d0f-8bf9-ebd5007a403e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TipoPareja" msprop:FriendlyName="ID_TipoPareja" msprop:DbColumnName="ID_TipoPareja" msprop:design-time-name="4d511fb7-86ef-4578-a138-ec49a4ddee28" type="xs:long" />
+                  <xs:element name="TipoPareja" msprop:FriendlyName="TipoPareja" msprop:DbColumnName="TipoPareja" msprop:design-time-name="cb339283-f3c8-49f0-a4d9-40e0132272b4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:FriendlyName="Cantidad" msprop:DbColumnName="Cantidad" msprop:design-time-name="a48880f7-ad0d-4d1c-8693-850012101335" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fac_Pregunta1" msprop:DbTableName="Fac_Pregunta1" msprop:FriendlyName="Fac_Pregunta1" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6d6adf9b-28e5-40cc-9b29-52920f438a11">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_AnnoTrabajo" msprop:FriendlyName="ID_AnnoTrabajo" msprop:DbColumnName="ID_AnnoTrabajo" msprop:design-time-name="f5a36fac-2b28-4b84-b84f-646f3509419c" type="xs:long" />
+                  <xs:element name="ID_TipoPareja" msprop:FriendlyName="ID_TipoPareja" msprop:DbColumnName="ID_TipoPareja" msprop:design-time-name="0133012b-9788-4540-8a99-22e82ec760e4" type="xs:long" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fac_Pregunta2" msprop:DbTableName="Fac_Pregunta2" msprop:FriendlyName="Fac_Pregunta2" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6dc474d3-cce5-4f04-a55b-91e0886da1dd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_AnnoTrabajo" msprop:FriendlyName="ID_AnnoTrabajo" msprop:DbColumnName="ID_AnnoTrabajo" msprop:design-time-name="d1fc04d3-955d-416b-8942-e59cbf971f3a" type="xs:long" />
+                  <xs:element name="ID_TipoMatrimonio" msprop:FriendlyName="ID_TipoMatrimonio" msprop:DbColumnName="ID_TipoMatrimonio" msprop:design-time-name="740e6d63-72c8-4f80-8d79-2da95cd05565" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID_RegionMatrimonio" msprop:FriendlyName="ID_RegionMatrimonio" msprop:DbColumnName="ID_RegionMatrimonio" msprop:design-time-name="bec08570-567e-4e13-b84f-6a0e943e136a" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fac_Pregunta3" msprop:DbTableName="Fac_Pregunta3" msprop:FriendlyName="Fac_Pregunta3" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b8452b1a-8f6e-49f1-83d1-a15509b97571">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_AnnoTrabajo" msprop:FriendlyName="ID_AnnoTrabajo" msprop:DbColumnName="ID_AnnoTrabajo" msprop:design-time-name="2f1f393c-6ec7-471b-b911-720a990f3ba8" type="xs:long" />
+                  <xs:element name="ID_RegionMatrimonio" msprop:FriendlyName="ID_RegionMatrimonio" msprop:DbColumnName="ID_RegionMatrimonio" msprop:design-time-name="72827edd-3f8e-40c5-9a3d-def35aeab09d" type="xs:long" />
+                  <xs:element name="ID_Ocupacion" msprop:FriendlyName="ID_Ocupacion" msprop:DbColumnName="ID_Ocupacion" msprop:design-time-name="1d284eb5-578b-41c9-8414-768805d54a85" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Matrimonios_Dim_AnnoTrabajo" />
+          <xs:field xpath="ID_AnnoTrabajo" />
+        </xs:unique>
+        <xs:unique name="dbo_Matrimonios_Dim_Ocupacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Matrimonios_Dim_Ocupacion" />
+          <xs:field xpath="ID_Ocupacion" />
+        </xs:unique>
+        <xs:unique name="dbo_Matrimonios_Dim_RegionMatrimonio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Matrimonios_Dim_RegionMatrimonio" />
+          <xs:field xpath="ID_RegionMatrimonio" />
+        </xs:unique>
+        <xs:unique name="dbo_Matrimonios_Dim_TipoMatrimonio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Matrimonios_Dim_TipoMatrimonio" />
+          <xs:field xpath="ID_TipoMatrimonio" />
+        </xs:unique>
+        <xs:unique name="dbo_Matrimonios_Dim_TipoPareja_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Matrimonios_Dim_TipoPareja" />
+          <xs:field xpath="ID_TipoPareja" />
+        </xs:unique>
+        <xs:keyref name="FK_Fac_Pregunta3_Matrimonios_Dim_RegionMatrimonio" refer="dbo_Matrimonios_Dim_RegionMatrimonio_Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta3" />
+          <xs:field xpath="ID_RegionMatrimonio" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta3_Matrimonios_Dim_AnnoTrabajo" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta3" />
+          <xs:field xpath="ID_AnnoTrabajo" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta3_Matrimonios_Dim_Ocupacion" refer="dbo_Matrimonios_Dim_Ocupacion_Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta3" />
+          <xs:field xpath="ID_Ocupacion" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta2_Matrimonios_Dim_TipoMatrimonio" refer="dbo_Matrimonios_Dim_TipoMatrimonio_Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta2" />
+          <xs:field xpath="ID_TipoMatrimonio" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta2_Matrimonios_Dim_RegionMatrimonio" refer="dbo_Matrimonios_Dim_RegionMatrimonio_Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta2" />
+          <xs:field xpath="ID_RegionMatrimonio" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta2_Matrimonios_Dim_AnnoTrabajo" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta2" />
+          <xs:field xpath="ID_AnnoTrabajo" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta1_Matrimonios_Dim_AnnoTrabajo" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta1" />
+          <xs:field xpath="ID_AnnoTrabajo" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fac_Pregunta1_Matrimonios_Dim_TipoPareja" refer="dbo_Matrimonios_Dim_TipoPareja_Constraint1">
+          <xs:selector xpath=".//dbo_Fac_Pregunta1" />
+          <xs:field xpath="ID_TipoPareja" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <BI xmlns="" />
+  </Schema>
+</DataSourceView>

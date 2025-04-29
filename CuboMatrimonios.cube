@@ -1,0 +1,377 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0f1f049e-afdf-48f2-87a2-975595965ccd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CuboMatrimonios</ID>
+  <Name>CuboMatrimonios</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="8cb36529-b16a-4cde-b96a-2e3d5c7ab905">
+      <ID>Matrimonios Dim Tipo Pareja</ID>
+      <Name>Matrimonios Dim Tipo Pareja</Name>
+      <DimensionID>Matrimonios Dim Tipo Pareja</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e5197657-5e12-491d-bda2-94ee5b0f39df">
+          <AttributeID>ID Tipo Pareja</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f37ffaf-3c12-45fd-84b6-afdfe1d421aa">
+          <AttributeID>Tipo Pareja</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2793d9b5-17f6-40aa-a03a-d87c8eb73bf1">
+          <AttributeID>Cantidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2023ec1e-6066-46fa-a2a0-5e61bde204b1">
+      <ID>Matrimonios Dim Anno Trabajo</ID>
+      <Name>Matrimonios Dim Anno Trabajo</Name>
+      <DimensionID>Matrimonios Dim Anno Trabajo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5908e3c-717f-47c7-8fbc-2ade9d853a6c">
+          <AttributeID>ID Anno Trabajo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7bf1888b-0e3c-434b-b82e-8ab41a1a0eb3">
+          <AttributeID>Anno Trabajo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f929b16d-2570-46b2-a683-c031c48fb927">
+          <AttributeID>Cantidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="31de9ecf-9a19-4ead-9182-5482254b77e1">
+      <ID>Matrimonios Dim Region Matrimonio</ID>
+      <Name>Matrimonios Dim Region Matrimonio</Name>
+      <DimensionID>Matrimonios Dim Region Matrimonio</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fb8dcfc5-a54e-46d3-b8aa-9be65151e9c0">
+          <AttributeID>ID Region Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef9f2ecb-f937-4563-974d-769ecd919fc2">
+          <AttributeID>Provincia Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="740fc874-0582-48ac-850e-e9354ca5b41f">
+          <AttributeID>Canton Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d8cb253-22f1-4fe5-8b66-1d76c04ee219">
+          <AttributeID>Distrito Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4fc898e4-9f31-43ce-bab4-58ac7cd1eabe">
+          <AttributeID>Cantidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e40b7f27-a729-4aab-b4cb-2f012db3857d">
+      <ID>Matrimonios Dim Tipo Matrimonio</ID>
+      <Name>Matrimonios Dim Tipo Matrimonio</Name>
+      <DimensionID>Matrimonios Dim Tipo Matrimonio</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d591a95b-7749-40e8-9f60-69404d56fa7d">
+          <AttributeID>ID Tipo Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd2074e0-4233-491d-9791-8aa30add1c30">
+          <AttributeID>Tipo Matrimonio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="958a5ddc-7aad-4687-aaef-03cd23039108">
+          <AttributeID>Cantidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="328542e0-00a8-4518-a5bf-b2ec0077bb1e">
+      <ID>Matrimonios Dim Ocupacion</ID>
+      <Name>Matrimonios Dim Ocupacion</Name>
+      <DimensionID>Matrimonios Dim Ocupacion</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="77892741-a3b0-4fa1-aea8-6533a40f30ca">
+          <AttributeID>ID Ocupacion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b093f7c8-3a05-4bac-bba0-14d80c1ddc46">
+          <AttributeID>Ocupacion Pareja1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2eecd6e-6147-4afd-a3aa-b80e8f7f70f8">
+          <AttributeID>Ocupacion Pareja2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4f98d12-b250-4d7f-9b31-d19a1d0d5482">
+          <AttributeID>Cantidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="4c95ddb9-2c7d-4264-8ffd-c8e3fc35e545">
+      <ID>Fac Pregunta1</ID>
+      <Name>Fac Pregunta1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="8dec2f47-ce22-4556-a89f-1d277cdbcc4e">
+          <ID>Recuento Fac Pregunta1</ID>
+          <Name>Recuento Fac Pregunta1</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="42de2821-733c-4576-91b0-5a901d77bf3a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0cef9406-35ba-446a-9d79-c62994241cd9">
+              <TableID>dbo_Fac_Pregunta1</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8a772855-c80a-47b8-8816-8a6e61642db5">
+          <CubeDimensionID>Matrimonios Dim Tipo Pareja</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7d7bf099-bf4b-497b-b31c-a0b60ea4f048">
+              <AttributeID>ID Tipo Pareja</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a155ff83-fd11-4e38-a863-cdec8f4dd6fc">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b01099ca-b954-407e-a589-c50a4dc95576">
+                    <TableID>dbo_Fac_Pregunta1</TableID>
+                    <ColumnID>ID_TipoPareja</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="185d7c65-c061-4a54-bc10-fac7bd1a8a45">
+          <CubeDimensionID>Matrimonios Dim Anno Trabajo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8f48fa98-a15a-4ad5-8d5a-9002d25e9e5d">
+              <AttributeID>ID Anno Trabajo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ea1a439e-1ca6-4b12-a4fc-e48af085ac64">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98cc2e0c-7ddf-4ea4-a42a-2d41ae0a4100">
+                    <TableID>dbo_Fac_Pregunta1</TableID>
+                    <ColumnID>ID_AnnoTrabajo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="182fbbeb-67f9-4d6b-b8ea-7a2656e18e7d">
+      <ID>Fac Pregunta2</ID>
+      <Name>Fac Pregunta2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f86e68d-b69b-4715-acc7-8e909ba41554">
+          <ID>Recuento Fac Pregunta2</ID>
+          <Name>Recuento Fac Pregunta2</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="96488a90-a16a-4306-b19d-768b9064ca8d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="548d264c-854d-4a3e-ac34-a9edde6dd55f">
+              <TableID>dbo_Fac_Pregunta2</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c349787a-1037-488d-bddd-5c9e10c423e8">
+          <CubeDimensionID>Matrimonios Dim Anno Trabajo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85d2751f-42b9-453c-998f-735e1ccbbb67">
+              <AttributeID>ID Anno Trabajo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ebdb85ce-08aa-432b-a701-d9c6476bea2a">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b00e0fb-ac1a-4930-b33d-421097480be1">
+                    <TableID>dbo_Fac_Pregunta2</TableID>
+                    <ColumnID>ID_AnnoTrabajo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d3a5e5c9-1451-4680-8488-f592b87cc742">
+          <CubeDimensionID>Matrimonios Dim Region Matrimonio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a336d081-2566-4b5b-81ec-62067356ff70">
+              <AttributeID>ID Region Matrimonio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="43d61560-2466-4a62-af9c-1e6a0a71712f">
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8507decb-c352-4e55-a4b4-506d7c75442f">
+                    <TableID>dbo_Fac_Pregunta2</TableID>
+                    <ColumnID>ID_RegionMatrimonio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40bbd2ac-59e3-4d44-8136-520c0c91dc6e">
+          <CubeDimensionID>Matrimonios Dim Tipo Matrimonio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e3686a1a-0145-4c78-aa5c-674e427f072d">
+              <AttributeID>ID Tipo Matrimonio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="95ffde01-6b72-4656-9279-b570c30e7178">
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a2cfa82d-6fe5-400d-9076-e70a31be38b0">
+                    <TableID>dbo_Fac_Pregunta2</TableID>
+                    <ColumnID>ID_TipoMatrimonio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="8a3bf0df-c325-4d7e-acc4-70e4253482ec">
+          <CubeDimensionID>Matrimonios Dim Tipo Pareja</CubeDimensionID>
+          <MeasureGroupID>Fac Pregunta1</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a74f7ea9-c402-45eb-b0d9-cf9082c2a0c5">
+      <ID>Fac Pregunta3</ID>
+      <Name>Fac Pregunta3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="75aae987-891a-4d7b-849c-0436310c8fbb">
+          <ID>Recuento Fac Pregunta3</ID>
+          <Name>Recuento Fac Pregunta3</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5b78e869-1240-4aa7-b295-d56e197bf5a0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2afda3d3-a358-4684-b640-86b2969c47cd">
+              <TableID>dbo_Fac_Pregunta3</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9c123a9b-24fb-44d6-98d2-55964877aafe">
+          <CubeDimensionID>Matrimonios Dim Ocupacion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8c240a17-78b7-41b3-bcfd-44d3347668f3">
+              <AttributeID>ID Ocupacion</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4123a6c1-57e1-40c5-9863-a225bad73800">
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f61dcf29-7fe4-4bf2-9632-0e79f6d492c4">
+                    <TableID>dbo_Fac_Pregunta3</TableID>
+                    <ColumnID>ID_Ocupacion</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d49b7a0d-6a6e-4e59-b2cc-ac6e1c8fe334">
+          <CubeDimensionID>Matrimonios Dim Anno Trabajo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4f51264f-25d7-4439-ab3f-83cb000770ff">
+              <AttributeID>ID Anno Trabajo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="964375a3-b925-4cd5-90e6-fb71d1d0db75">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cbbd0da8-9464-4967-a0b6-3c777ee38eb3">
+                    <TableID>dbo_Fac_Pregunta3</TableID>
+                    <ColumnID>ID_AnnoTrabajo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="67635665-0e16-4784-81ff-9e3a10884d85">
+          <CubeDimensionID>Matrimonios Dim Region Matrimonio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a62289c1-81a5-4ca5-9d78-31465712ff8f">
+              <AttributeID>ID Region Matrimonio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dcdc6be5-3eca-4b67-8a52-6988615eaaf6">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bb94baf0-e8af-4b0d-9f1b-aadde11c6c61">
+                    <TableID>dbo_Fac_Pregunta3</TableID>
+                    <ColumnID>ID_RegionMatrimonio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="e32cb516-96e3-49aa-ad62-212dc46d6bdf">
+          <CubeDimensionID>Matrimonios Dim Tipo Pareja</CubeDimensionID>
+          <MeasureGroupID>Fac Pregunta1</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="a8a44608-c104-4c29-b0d5-cac6f1c5950f">
+    <DataSourceViewID>BI</DataSourceViewID>
+  </Source>
+</Cube>

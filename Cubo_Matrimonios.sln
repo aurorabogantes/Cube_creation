@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cubo_Matrimonios", "Cubo_Matrimonios.dwproj", "{6357654A-CB27-B419-7AC5-8B5BFA89E447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6357654A-CB27-B419-7AC5-8B5BFA89E447}.Development|Default.ActiveCfg = Development
+		{6357654A-CB27-B419-7AC5-8B5BFA89E447}.Development|Default.Build.0 = Development
+		{6357654A-CB27-B419-7AC5-8B5BFA89E447}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A84D1060-D9DA-4D43-B714-1D952F83E84A}
+	EndGlobalSection
+EndGlobal

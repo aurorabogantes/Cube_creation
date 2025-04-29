@@ -1,0 +1,140 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ea48227d-d862-469c-bfa2-842a9617ec1b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Matrimonios Dim Ocupacion</ID>
+  <Name>Matrimonios Dim Ocupacion</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="833f4e82-d0b1-47d6-9044-ac4143987b46">
+    <DataSourceViewID>BI</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="1a03564f-4717-4471-a8cf-1346f95678db">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="941ec397-85bc-428c-9d16-7830300fbf21">
+      <ID>ID Ocupacion</ID>
+      <Name>ID Ocupacion</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="816bcfd8-dd2a-482d-80d2-489c020f96d5">
+          <DataType>BigInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbb58823-68ca-4eb3-a04a-bed8471100b5">
+            <TableID>dbo_Matrimonios_Dim_Ocupacion</TableID>
+            <ColumnID>ID_Ocupacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d7265160-287a-4092-8eef-6ab828ae1b86">
+          <AttributeID>Ocupacion Pareja1</AttributeID>
+          <Name>Ocupacion Pareja1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4db919b9-f523-4725-b572-317bbb3d3759">
+          <AttributeID>Ocupacion Pareja2</AttributeID>
+          <Name>Ocupacion Pareja2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e182ad6e-b903-41cb-af17-5debf50552f9">
+          <AttributeID>Cantidad</AttributeID>
+          <Name>Cantidad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0d255eb-79be-45e1-ab03-0703a3c15360">
+      <ID>Ocupacion Pareja1</ID>
+      <Name>Ocupacion Pareja1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="770baadd-ba75-4878-8689-2795f706337f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="833411ac-ec29-4b29-8a40-08f47320f65b">
+            <TableID>dbo_Matrimonios_Dim_Ocupacion</TableID>
+            <ColumnID>OcupacionPareja1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fd75726b-97e8-4490-b614-92c9d95948d0">
+      <ID>Ocupacion Pareja2</ID>
+      <Name>Ocupacion Pareja2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c23e38b-ceac-4a79-a5d5-efd45e0fad77">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fbf5500-4d6c-4124-b25d-29cb686b9169">
+            <TableID>dbo_Matrimonios_Dim_Ocupacion</TableID>
+            <ColumnID>OcupacionPareja2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d61da9b0-2fcd-4e1f-86c3-3bf36b582abd">
+      <ID>Cantidad</ID>
+      <Name>Cantidad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9c5c973-5442-48bb-b6a1-ee9116fce7d8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="715422ff-098f-4488-a884-e1acdb8bbd73">
+            <TableID>dbo_Matrimonios_Dim_Ocupacion</TableID>
+            <ColumnID>Cantidad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

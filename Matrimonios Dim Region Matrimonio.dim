@@ -1,0 +1,161 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3831bb8-c0c1-4baf-802d-ee6e32431b5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Matrimonios Dim Region Matrimonio</ID>
+  <Name>Matrimonios Dim Region Matrimonio</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="346a3a84-a22f-48a1-9aa5-848409420f54">
+    <DataSourceViewID>BI</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="26268499-9e8d-4f3a-9ee5-81ca16fdca47">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="bb2a705c-578d-481a-b306-0f09f7a2c69c">
+      <ID>ID Region Matrimonio</ID>
+      <Name>ID Region Matrimonio</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14b98a2c-fe7b-4d0d-bcc2-38a95d9fb5b9">
+          <DataType>BigInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50dcc55f-5b29-41cb-b682-6f42e5203691">
+            <TableID>dbo_Matrimonios_Dim_RegionMatrimonio</TableID>
+            <ColumnID>ID_RegionMatrimonio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b468f985-f774-4b20-a9f9-042e43a4d483">
+          <AttributeID>Provincia Matrimonio</AttributeID>
+          <Name>Provincia Matrimonio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7a3ee569-4957-44cd-8c9f-b1661b59640f">
+          <AttributeID>Canton Matrimonio</AttributeID>
+          <Name>Canton Matrimonio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce5dcf0b-94ee-4fb3-abc8-7319de6f4a26">
+          <AttributeID>Distrito Matrimonio</AttributeID>
+          <Name>Distrito Matrimonio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c1a0050-7fc0-456c-925a-c33c389ba634">
+          <AttributeID>Cantidad</AttributeID>
+          <Name>Cantidad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07ff8217-4288-4b82-b36f-8a58d86e12d7">
+      <ID>Provincia Matrimonio</ID>
+      <Name>Provincia Matrimonio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33075531-111c-4c95-a959-3a399f4b6217">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33d466fc-facc-4892-bab9-a3f5a5c68182">
+            <TableID>dbo_Matrimonios_Dim_RegionMatrimonio</TableID>
+            <ColumnID>ProvinciaMatrimonio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2dbc1975-cec8-417f-961e-f0dd8e4fad4b">
+      <ID>Canton Matrimonio</ID>
+      <Name>Canton Matrimonio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75a28951-b885-4cb7-9ce3-c78655d040f7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51f54d3e-7046-4b6e-b848-75202ddeeab9">
+            <TableID>dbo_Matrimonios_Dim_RegionMatrimonio</TableID>
+            <ColumnID>CantonMatrimonio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe272a94-80d0-4fbf-ae1c-1d420ec825b7">
+      <ID>Distrito Matrimonio</ID>
+      <Name>Distrito Matrimonio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0f2da14-d167-45f7-b685-f7a3b5cb9610">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="086751e0-6414-4a94-8eb6-bcb9b522f07a">
+            <TableID>dbo_Matrimonios_Dim_RegionMatrimonio</TableID>
+            <ColumnID>DistritoMatrimonio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e252384-8703-4e6e-b9d9-a3bb1555df85">
+      <ID>Cantidad</ID>
+      <Name>Cantidad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5189121-4111-4d4b-bf1f-12667caa0f0a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0562356f-6083-48d9-a56f-2fca1e230efe">
+            <TableID>dbo_Matrimonios_Dim_RegionMatrimonio</TableID>
+            <ColumnID>Cantidad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
